@@ -36,10 +36,10 @@ Em conformidade com as instruções da atividade, declaro o uso de Inteligência
 **Modelo Utilizado:** Google Gemini
 
 **Prompts / Questionamentos Realizados:**
-1. *"A partir do diagrama UML e das instruções da PC Mania (como não usar ArrayList e evitar getters/setters desnecessários), gere a estrutura base em Java mantendo o encapsulamento estrito."*
-2. *"O documento não menciona se devo pedir o Nome e o CPF do cliente pelo console. Posso deixar essas informações fixas (hardcoded) na classe Main já que as Dicas dizem que a única entrada de dados deve ser a compra dos PCs?"*
-3. *"O diagrama mostra composição (losango preenchido) para o Sistema Operacional e Hardware. Se eu instanciar esses objetos internamente na classe Computador, precisarei criar novos métodos que não estão no UML. É melhor passar via construtor na Main para manter a fidelidade visual das assinaturas do diagrama?"*
-4. *"A instrução pede a criação de um 'método utilitário (helper)' na classe ProcessarPedido que recebe o array. Em POO com Java, a forma correta de declarar esse helper é utilizando o modificador `static` para chamá-lo diretamente sem instanciar?"*
+1. *"Com base no diagrama UML e nas instruções da PC Mania, principalmente sobre não utilizar ArrayList e evitar getters e setters que não sejam necessários, como posso montar a estrutura inicial das classes em Java mantendo o encapsulamento?"*
+2. *"Posso deixar as informações fixas, de nome e cpf, na classe Main já que as Dicas dizem que a única entrada de dados deve ser a compra dos PCs?"*
+3. *"No diagrama UML, o Sistema Operacional e o Hardware aparecem como composição da classe Computador. Nesse caso, é melhor criar esses objetos dentro da própria classe Computador ou passá-los pelo construtor na Main? Quero seguir o diagrama sem precisar criar métodos que não estão previstos nele"*
+4. *Quanto ao método utilitário faz sentido usar o modificador static, já que a ideia é utilizar esse método sem precisar criar uma instância da classe?"*
 
 **Avaliação dos Resultados:**
-O resultado da utilização da IA foi **altamente satisfatório e esclarecedor**. A IA não foi usada apenas como um gerador de código, mas como uma ferramenta de *pair programming*. As discussões foram cruciais para validar a interpretação das Dicas do documento (como a entrada estática de dados do cliente) e para equilibrar a teoria de POO com a prática, decidindo manter a injeção via construtor para preservar exatamente as assinaturas do diagrama UML, sem criar métodos adicionais não solicitados. Além disso, confirmou a aplicação do padrão de métodos utilitários estáticos no Java, solidificando os conceitos da disciplina.
+O resultado da utilização da IA foi **totalmente satisfatório**. Utilizei o modelo muito mais como um monitor de dúvidas do que como um simples gerador de código. A ferramenta ajudou a traduzir de forma prática as diferenças de implementação entre Agregação e Composição, e confirmou minhas suspeitas sobre deixar dados estáticos na `Main` e como implementar o método `static` da classe de processamento, tornando o estudo bem mais ágil e direcionado.
